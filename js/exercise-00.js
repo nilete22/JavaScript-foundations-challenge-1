@@ -9,15 +9,15 @@
    Log out each variable to the terminal at the end.
 */
 
-const Nil_string = "Hello";
-const Nil_number = 22;
-const Nil_boolean = true;
-const Nil_null = null;
-const Nil_undefined = undefined;
+const nilString = "Hello";
+const nilNumber = 22;
+const nilBoolean = true;
+const nilNull = null;
+const nilUndefined = undefined;
 
-console.log(Nil_string);
-console.log(Nil_number);
-console.log(Nil_boolean);
-console.log(Nil_null);
-console.log(Nil_undefined);
+console.log(nilString);
+console.log(nilNumber);
+console.log(nilBoolean);
+console.log(nilNull);
+console.log(nilUndefined);
 
