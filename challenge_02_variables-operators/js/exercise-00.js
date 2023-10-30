@@ -20,4 +20,3 @@ console.log(nilNumber);
 console.log(nilBoolean);
 console.log(nilNull);
 console.log(nilUndefined);
-

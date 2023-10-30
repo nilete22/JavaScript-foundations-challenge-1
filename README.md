@@ -13,7 +13,7 @@ JavaScript is a widely used programming language for web development. It runs in
 ### What is a primitive value?
 
 ```
-In JavaScript, a primitive value is a simple, direct piece of data that represents a single value. 
+In JavaScript, a primitive value is a simple, direct piece of data that represents a single value.
 ```
 
 ### Which are primitive values? Explain them with at least one example for primitive.
