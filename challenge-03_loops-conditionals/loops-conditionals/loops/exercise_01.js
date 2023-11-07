@@ -11,7 +11,8 @@ for (let index = 1; index <= 10; index++) {
 
   if (randomNumber >= 5) {
     console.log("Logged In!");
-  } else {
+  }
+  if (randomNumber < 5) {
     console.log("Logged Out!");
   }
 }
