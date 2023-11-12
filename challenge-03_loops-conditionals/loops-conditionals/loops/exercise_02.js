@@ -18,15 +18,22 @@
     You made it!
     All, done!
 */
-for (let i = 1; i <= 100; i++) {
-  if (i % 10 === 0) {
-    console.log("Checkpoint!", i);
+const counterLoop = function (firstNumber, lastNumber) {
+  for (let i = firstNumber; i <= lastNumber; i++) {
+    if (i % 10 === 0) {
+      console.log("Checkpoint!", i);
+    }
+    if (i === 50) {
+      console.log("Half way there!");
+    }
+    if (i === 100) {
+      console.log("You made it!");
+    }
   }
-  if (i === 50) {
-    console.log("Half way there!");
-  }
-  if (i === 100) {
-    console.log("You made it!");
-  }
-}
-console.log("All, done!");
+  console.log("All, done!");
+};
+
+const firtsNumber = 1;
+const lastNumber = 100;
+
+counterLoop(firtsNumber, lastNumber);

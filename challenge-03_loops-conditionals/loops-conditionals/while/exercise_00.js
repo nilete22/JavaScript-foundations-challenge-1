@@ -7,16 +7,21 @@
 
     HINT1: Be careful for an infinite loop!
 */
+
+const loginProgram = function (loggedIn, loginAttempts) {
+  while (!loggedIn) {
+    console.log("Incorrect login credentials");
+
+    loginAttempts++;
+
+    if (loginAttempts >= 3) {
+      loggedIn = true;
+    }
+  }
+  console.log("Successfully logged in!");
+};
+
 let loggedIn = false;
 let loginAttempts = 0;
 
-while (!loggedIn) {
-  console.log("Incorrect login credentials");
-
-  loginAttempts++;
-
-  if (loginAttempts >= 3) {
-    loggedIn = true;
-  }
-}
-console.log("Successfully logged in!");
+loginProgram(loggedIn, loginAttempts);

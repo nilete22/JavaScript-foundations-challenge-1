@@ -7,11 +7,16 @@
 
     HINT: modulus operator ( % ) is your friend
 */
+
+const checkEvenOrOdd = function (number) {
+  if (number % 2 === 0) {
+    console.log(number + " is even.");
+  }
+  if (number % 2 !== 0) {
+    console.log(number + " is odd.");
+  }
+};
+
 let number = 13;
 
-if (number % 2 === 0) {
-  console.log(number + " is even.");
-}
-if (number % 2 !== 0) {
-  console.log(number + " is odd.");
-}
+checkEvenOrOdd(number);

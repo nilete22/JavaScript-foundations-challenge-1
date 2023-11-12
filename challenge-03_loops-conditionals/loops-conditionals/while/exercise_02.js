@@ -18,23 +18,27 @@
     You made it!
     All, done!
 */
-let i = 1;
 
+const counterNumbersLoop = function (i, loopCount) {
+  while (i <= 100) {
+    if (i % 10 === 0) {
+      console.log("Checkpoint!", i);
+      loopCount++;
+    } else if (i === 50) {
+      console.log("Half way there!");
+      loopCount++;
+    } else if (i === 100) {
+      console.log("You made it!");
+      loopCount++;
+    }
+    i++;
+  }
+  if (loopCount === 10) {
+    console.log("All, done!");
+  }
+};
+
+let i = 1;
 let loopCount = 0;
 
-while (i <= 100) {
-  if (i % 10 === 0) {
-    console.log("Checkpoint!", i);
-    loopCount++;
-  } else if (i === 50) {
-    console.log("Half way there!");
-    loopCount++;
-  } else if (i === 100) {
-    console.log("You made it!");
-    loopCount++;
-  }
-  i++;
-}
-if (loopCount === 10) {
-  console.log("All, done!");
-}
+counterNumbersLoop(i, loopCount);

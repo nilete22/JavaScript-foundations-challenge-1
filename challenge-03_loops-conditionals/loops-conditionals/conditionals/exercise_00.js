@@ -9,17 +9,21 @@
   8. Change animal to different values to make sure it works in all cases
 */
 
+const animalChecker = function (animal) {
+  if (animal === "cat") {
+    console.log("Miau!");
+  }
+  if (animal === "dog") {
+    console.log("buup!");
+  }
+  if (animal !== "dog" && animal !== "cat") {
+    console.log("it could be an alien");
+  }
+};
+
 console.log("--- Animal Checker Program ---");
 let animal = "dog";
 
-if (animal === "cat") {
-  console.log("Miau!");
-}
-if (animal === "dog") {
-  console.log("buup!");
-}
-if (animal !== "dog" && animal !== "cat") {
-  console.log("it could be an alien");
-}
+animalChecker(animal);
 
 console.log("--- Animal check complete ---");

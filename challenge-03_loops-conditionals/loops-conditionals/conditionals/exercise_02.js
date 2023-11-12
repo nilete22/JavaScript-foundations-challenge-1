@@ -31,17 +31,22 @@ if (age > 18) {
 
  
 */
+
+const ageType = function (age) {
+  if (age < 3) {
+    console.log("You're just a baby!");
+  }
+  if (age < 13) {
+    console.log("You are in elementary school, kid.");
+  }
+  if (age <= 18) {
+    console.log("Nice, you're a teenager!");
+  }
+  if (age > 18) {
+    console.log("Most places consider you an adult.");
+  }
+};
+
 const age = 20;
 
-if (age < 3) {
-  console.log("You're just a baby!");
-}
-if (age < 13) {
-  console.log("You are in elementary school, kid.");
-}
-if (age <= 18) {
-  console.log("Nice, you're a teenager!");
-}
-if (age > 18) {
-  console.log("Most places consider you an adult.");
-}
+ageType(age);
