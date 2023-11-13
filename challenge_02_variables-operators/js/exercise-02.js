@@ -1,4 +1,3 @@
-
 /*1. Declare a variable using let with any name you like, but without a value.*/
 let HelloJaume;
 
